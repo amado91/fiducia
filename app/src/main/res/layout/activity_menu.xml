@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bancomext.fiducia.views.MenuActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_fondo_interno_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TituloMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:text="Movimientos"
+            android:textColor="@color/blanco"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibRegresar" />
+
+        <ImageButton
+            android:id="@+id/ibRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="40dp"
+            android:padding="15dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ibBuscarFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:text="Buscar por fecha"
+            android:textColor="@color/blanco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TituloMenu" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sombra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/tituloFideicomiso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="Titulo Fideicomiso"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintBottom_toTopOf="@+id/tvLeyendaSaldo" />
+
+        <TextView
+            android:id="@+id/tvLeyendaSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:text="Saldo al cierre del día hábil anterior"
+            android:textColor="@color/colorAmount"
+            android:textStyle="bold"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="@+id/tituloFideicomiso" />
+
+        <ImageView
+            android:id="@+id/ivEstadistica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/ic_fideicomiso"
+            cardview:layout_constraintBottom_toBottomOf="@id/tituloFideicomiso"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintTop_toTopOf="@id/tituloFideicomiso" />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnvMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clTitulo" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/btnvMenu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fondo_elementos"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:menu="@menu/menu_navigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+</android.support.constraint.ConstraintLayout>

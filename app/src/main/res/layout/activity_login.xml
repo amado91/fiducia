@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_login"
+    tools:context="com.bancomext.fiducia.views.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="145dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:tint="@color/blanco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_fiducia_login" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/ingresa"
+        android:textColor="@color/blanco"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/gris_linea"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3">
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Usuario"
+            android:padding="8dp"
+            android:inputType="textCapCharacters"
+            android:text=""
+            android:textColor="@color/blanco"
+            android:textColorHint="@color/gris_linea"
+            android:textCursorDrawable="@color/blanco"
+            android:textSize="20sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="0dp"
+        android:layout_height="0.25dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilEmail"
+        app:srcCompat="@color/blanco"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/gris_linea"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilEmail">
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:text=""
+            android:padding="8dp"
+            android:textColor="@color/blanco"
+            android:textColorHint="@color/blanco"
+            android:textCursorDrawable="@color/blanco"
+            android:textSize="20sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="0.25dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilPass"
+        app:srcCompat="@color/blanco" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/borde_redondo_blanco"
+        android:text="@string/iniciar_sesion"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/aplicacion"
+        app:layout_constraintBottom_toTopOf="@id/btnAviso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btnAviso"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/aviso_privacidad"
+        android:textColor="@color/blanco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/version"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/blanco"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnAviso"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+</android.support.constraint.ConstraintLayout>

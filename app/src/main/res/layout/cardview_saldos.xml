@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_saldos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0.25dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    cardview:cardCornerRadius="4dp"
+    cardview:cardPreventCornerOverlap="false">
+
+    <TextView
+        android:id="@+id/tvFechaSaldos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:background="@color/colorHeader"
+        android:visibility="gone"
+        android:textColor="@color/aplicacion"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        cardview:layout_constraintStart_toStartOf="parent"
+        cardview:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardSaldos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.25dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        cardview:cardPreventCornerOverlap="false"
+        cardview:layout_constraintBottom_toBottomOf="parent"
+        cardview:layout_constraintEnd_toEndOf="parent"
+        cardview:layout_constraintHorizontal_bias="0.0"
+        cardview:layout_constraintStart_toStartOf="parent"
+        cardview:layout_constraintTop_toBottomOf="@+id/tvFechaSaldos">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tituloSaldo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:text="TextView"
+                android:textStyle="bold"
+                android:textColor="@color/colorAmount"
+                cardview:layout_constraintEnd_toStartOf="@+id/textView15"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/monedaSaldo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:text="TextView"
+                android:textColor="@color/colormonedaSaldo"
+                cardview:layout_constraintBottom_toBottomOf="parent"
+                cardview:layout_constraintEnd_toStartOf="@+id/saldoSaldo"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toBottomOf="@+id/tituloSaldo" />
+
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:text="Saldo actual"
+                android:textColor="@color/colormonedaSaldo"
+                android:textAlignment="textEnd"
+                cardview:layout_constraintEnd_toStartOf="@+id/saldosSiguiente"
+                cardview:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/saldoSaldo"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="end"
+                android:textColor="@color/colorAmount"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                cardview:layout_constraintBottom_toBottomOf="parent"
+                cardview:layout_constraintEnd_toStartOf="@+id/saldosSiguiente"
+                cardview:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+            <ImageView
+                android:id="@+id/saldosSiguiente"
+                android:layout_width="11dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:tint="@color/texto_gris"
+                android:src="@drawable/ic_siguiente"
+                cardview:layout_constraintBottom_toBottomOf="parent"
+                cardview:layout_constraintEnd_toEndOf="parent"
+                cardview:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</android.support.constraint.ConstraintLayout>

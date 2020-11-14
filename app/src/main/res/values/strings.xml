@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Bancomext Fiducia</string>
+    <string name="movimientos"><font size="10">Movimientos</font></string>
+    <string name="saldos"><font size="10">Saldos</font></string>
+    <string name="patrimonios"><font size="10">Patrimonios</font></string>
+    <string name="mi_cuenta"><font size="10">Mi cuenta</font></string>
+    <string name="notificaciones"><font size="10">Notificaciones</font></string>
+    <string name="default_notification_channel_id">Channel ID</string>
+
+    <string name="movimientos1"><font size="26">Movimientos</font></string>
+    <string name="saldos1"><font size="26">Saldos</font></string>
+    <string name="patrimonios1"><font size="26">Patrimonios</font></string>
+    <string name="mi_cuenta1"><font size="26">Mi cuenta</font></string>
+    <string name="notificaciones1"><font size="26">Notificaciones</font></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onboarding_legend">Consulta movimiento en tiempo real y saldos al cierre del día hábil anterior. \n\n Da seguimiento, supervisión y control de operaciones del fideicomiso.</string>
+    <string name="continue_button">Continuar</string>
+    <string name="aviso_privacidad">Aviso de Privacidad</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="pass">Contraseña</string>
+    <string name="email">Correo electrónico</string>
+    <string name="ingresa">Ingresa tu usuario y contraseña</string>
+    <string name="fideicomisos">Fideicomisos</string>
+
+    <!--Mensajes de WS Login-->
+    <string name="successful_login">El usuario se validó con éxito</string>
+    <string name="Wrong_user_password">Usuario y/o contraseña incorrecta.</string>
+    <string name="inactive_user">El usuario no está activo para usar esta aplicación</string>
+
+    <!--Mensajes de WS Token-->
+    <string name="successful_token">La credencial se registró con éxito</string>
+    <string name="error_token_insert">Error al insertar el token</string>
+    <string name="user_not_exist">El usuario ingresado no existe</string>
+
+    <!--Mensajes de WS Mensaje Reporte-->
+    <string name="successful_reporte">La credencial se registró con éxito</string>
+    <string name="resource_not_available">Recurso no disponible en este momento</string>
+    <string name="product_not_available">Producto no disponible en este momento</string>
+    <string name="error_message">Error al registrar mensaje. Intente nuevamente más tarde</string>
+    <string name="conection_error">Error de conexión en Servicio Central</string>
+
+    <!--Mensajes de error en comun de los WS -->
+    <string name="request_error">Error en el formato de la petición</string>
+    <string name="service_error">Error interno del servicio</string>
+    <string name="db_error">Error interno de la base de datos</string>
+
+
+    <!-- Firebase -->
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+</resources>

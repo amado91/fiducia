@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blanco">#ffffff</color>
+    <color name="texto_gris">#8D919D</color>
+    <color name="gris_linea">#cdced3</color>
+    <color name="aplicacion">#4b8388</color>
+    <color name="fondo">#E3E5EC</color>
+    <color name="rating">#EFCE4A</color>
+    <color name="fondo_elementos">#FAFAFA</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTextgrisObscuro">#393C4A</color>
+    <color name="colorHeader">#F3F4F5</color>
+    <color name="colorAmount">#5D6273</color>
+    <color name="colorTextItemSaldo">#030303</color>
+    <color name="colormonedaSaldo">#8F8E94</color>
+    <color name="colorPreMenu">#336B70</color>
+</resources>

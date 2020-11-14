@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/movimientosItem"
+        android:icon="@mipmap/movimientos_off"
+        android:title="@string/movimientos" />
+
+    <item
+        android:id="@+id/saldosItem"
+        android:icon="@mipmap/saldos_off"
+        android:title="@string/saldos" />
+
+    <item
+        android:id="@+id/patrimoniosItem"
+        android:icon="@mipmap/patrimonios_off"
+        android:title="@string/patrimonios" />
+
+    <item
+        android:id="@+id/cuentaItem"
+        android:icon="@mipmap/cuenta_off"
+        android:title="@string/mi_cuenta" />
+
+    <item
+        android:id="@+id/notificacionesItem"
+        android:icon="@mipmap/notificaciones_off"
+        android:title="@string/notificaciones" />
+
+</menu>

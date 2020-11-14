@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    cardview:cardCornerRadius="4dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/imageView6"
+            android:layout_width="7dp"
+            android:layout_height="54dp"
+            android:background="@color/aplicacion"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:srcCompat="@drawable/borde_cardview" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:text="Fideicomiso"
+            android:textColor="@color/colorTextgrisObscuro"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toStartOf="@id/fideicomiso"
+            cardview:layout_constraintStart_toEndOf="@id/imageView6"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fideicomiso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="10dp"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:text="10503 "
+            android:textColor="@color/colorTextgrisObscuro"
+            android:textStyle="bold"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toStartOf="@id/nombre"
+            cardview:layout_constraintStart_toEndOf="@id/textView19"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Mercader"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toStartOf="@id/siguiente"
+            cardview:layout_constraintStart_toEndOf="@id/fideicomiso"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/siguiente"
+            android:layout_width="9dp"
+            android:layout_height="14dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_siguiente"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

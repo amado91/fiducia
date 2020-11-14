@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/aplicacion</item>
+        <item name="colorPrimaryDark">@color/aplicacion</item>
+        <item name="colorAccent">@color/aplicacion</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <!--<item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>-->
+    </style>
+
+
+    <style name="DatePicker" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:background">#fff</item>
+        <item name="android:textColorPrimaryInverse">@color/blanco</item>
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:textColorSecondary">@color/texto_gris</item>
+        <item name="android:textColorSecondaryInverse">@color/texto_gris</item>
+        <item name="android:textColor">@color/aplicacion</item>
+        <item name="colorControlActivated">@color/aplicacion</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/texto_gris</item>
+        <item name="colorControlActivated">@color/rating</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@color/gris_linea</item>
+    </style>
+
+    <style name="ProgressTheme" parent="android:Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+</resources>

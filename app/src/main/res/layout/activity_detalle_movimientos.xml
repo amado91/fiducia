@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bancomext.fiducia.views.DetalleMovimientosActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_fondo_interno_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TituloMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="45dp"
+            android:text="Detalle de movimiento"
+            android:textColor="@color/blanco"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/backMov" />
+
+        <ImageButton
+            android:id="@+id/backMov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/blanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+        <TextView
+            android:id="@+id/tituloFideicomiso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:text="Titulo Fideicomiso"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clTitulo">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="331dp"
+            android:layout_height="1.9dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTercero"
+            app:srcCompat="@color/gris_linea" />
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="17dp"
+            android:text="Fecha:"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="01/07/2019"
+            android:textColor="@color/colorTextgrisObscuro"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/fecha"
+            app:layout_constraintTop_toTopOf="@id/fecha" />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="17dp"
+            android:text="Folio:"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView16" />
+
+        <TextView
+            android:id="@+id/tvFolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="15450"
+            android:textColor="@color/colorTextgrisObscuro"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/textView8"
+            app:layout_constraintTop_toTopOf="@id/textView8" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Instrucción:"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textView8"
+            app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+        <TextView
+            android:id="@+id/tvValorar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Liquidación:"
+            android:textColor="@color/colorTextgrisObscuro"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/textView10"
+            app:layout_constraintTop_toTopOf="@id/textView10" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Moneda:"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textView10"
+            app:layout_constraintTop_toBottomOf="@id/imageView4" />
+
+        <TextView
+            android:id="@+id/tvMoneda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text="MXN"
+            android:textColor="@color/colorTextgrisObscuro"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/textView11"
+            app:layout_constraintTop_toTopOf="@id/textView11" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Importe:"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textView11"
+            app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+        <TextView
+            android:id="@+id/tvImporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="$54,900.00"
+            android:textColor="@color/colorTextgrisObscuro"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/textView12"
+            app:layout_constraintTop_toTopOf="@id/textView12" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Concepto:"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvTercero"
+            app:layout_constraintStart_toStartOf="@id/textView12"
+            app:layout_constraintTop_toBottomOf="@id/imageView14" />
+
+        <TextView
+            android:id="@+id/tvConcepto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="4"
+            android:paddingRight="10dp"
+            android:singleLine="false"
+            android:text="Parcialidad seguro"
+            android:textColor="@color/colorTextgrisObscuro"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+
+        <TextView
+            android:id="@+id/tvxTercero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tercero:"
+            android:textColor="@color/colorTextgrisObscuro"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/textView13"
+            app:layout_constraintTop_toBottomOf="@id/imageView15" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="331dp"
+            android:layout_height="1.9dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView8"
+            app:srcCompat="@color/gris_linea" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="331dp"
+            android:layout_height="1.9dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvValorar"
+            app:srcCompat="@color/gris_linea" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="331dp"
+            android:layout_height="1.9dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMoneda"
+            app:srcCompat="@color/gris_linea" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="331dp"
+            android:layout_height="1.9dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvImporte"
+            app:srcCompat="@color/gris_linea" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="331dp"
+            android:layout_height="1.9dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvConcepto"
+            app:srcCompat="@color/gris_linea" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="331dp"
+            android:layout_height="1.9dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fecha"
+            app:srcCompat="@color/gris_linea" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="331dp"
+            android:layout_height="1.9dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@id/fecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@color/gris_linea" />
+
+        <TextView
+            android:id="@+id/tvTercero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="4"
+            android:paddingRight="10dp"
+            android:singleLine="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvxTercero"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvxTercero"
+            app:layout_constraintTop_toTopOf="@id/tvxTercero" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

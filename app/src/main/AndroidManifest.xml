@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bancomext.fiducia.bancomextfiducia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher_round_transparent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity android:name="com.bancomext.fiducia.views.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bancomext.fiducia.views.OnboardingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bancomext.fiducia.views.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bancomext.fiducia.views.FideicomisosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bancomext.fiducia.views.MenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bancomext.fiducia.views.DetalleMovimientosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bancomext.fiducia.views.DetalleSaldosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bancomext.fiducia.views.BuscarFechaActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bancomext.fiducia.views.ResultadosBusquedaActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bancomext.fiducia.views.AvisosPrivacidadActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bancomext.fiducia.views.preMenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bancomext.fiducia.views.ValorarActivity"
+            android:screenOrientation="portrait"/>
+        <service
+            android:name="com.bancomext.fiducia.tools.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.bancomext.fiducia.tools.FirebaseDataReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "101345886964",
+    "firebase_url": "https://bancomext-fiducia.firebaseio.com",
+    "project_id": "bancomext-fiducia",
+    "storage_bucket": "bancomext-fiducia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101345886964:android:4b6a32c0326463c4",
+        "android_client_info": {
+          "package_name": "com.bancomext.fiducia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101345886964-75ddbuk65cjcn1c5j8ak65cahom6ctad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhbNYi41Lt_LaDHZGrb7wOTakPG2rBaZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101345886964-75ddbuk65cjcn1c5j8ak65cahom6ctad.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "101345886964-dmtdfojbr283q8vasqh3ejms6or032pb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "mx.bancomext.fiducia"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

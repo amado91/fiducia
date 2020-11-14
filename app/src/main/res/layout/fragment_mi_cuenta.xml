@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="com.bancomext.fiducia.views.fragmentView.MiCuentaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/TituloMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="17dp"
+            android:text="Valorar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ibValorar"
+            android:layout_width="9dp"
+            android:layout_height="14dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_siguiente"
+            app:layout_constraintBottom_toBottomOf="@+id/TituloMenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TituloMenu" />
+
+
+        <TextView
+            android:id="@+id/cerrarsesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="29dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Cerrar sesión"
+            app:layout_constraintStart_toStartOf="@+id/TituloMenu"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+        <ImageView
+            android:id="@+id/ibCerrarSesion"
+            android:layout_width="9dp"
+            android:layout_height="14dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/ic_siguiente"
+            app:layout_constraintBottom_toBottomOf="@+id/cerrarsesion"
+            app:layout_constraintEnd_toEndOf="@+id/ibValorar"
+            app:layout_constraintTop_toTopOf="@+id/cerrarsesion" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:src="@color/gris_linea"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TituloMenu" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:src="@color/gris_linea"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cerrarsesion" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bancomext.fiducia.views.fragmentView.NotificacionesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_notificaciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/avisoNotificaciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/aplicacion"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeStepGranularity="2sp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="No cuentas con Notificaciones para este Fideicomiso"/>
+</FrameLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bancomext.fiducia.views.BuscarFechaActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_fondo_interno_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TituloMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:text="Buscar por fecha"
+            android:textColor="@color/blanco"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cancelarBtn" />
+
+        <TextView
+            android:id="@+id/cancelarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp"
+            android:text="Cancelar"
+            android:textColor="@color/blanco"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clTitulo"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:background="@color/blanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+        <TextView
+            android:id="@+id/tituloFideicomiso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="13dp"
+            android:text="Titulo Fideicomiso"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clTitulo">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="238dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Recuerda que puedes consultar tus movimientos hasta 12 meses atrás."
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="31dp"
+            android:text="Introducir fechas"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView9" />
+
+        <EditText
+            android:id="@+id/etInicial"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Del"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView14"
+            app:layout_constraintVertical_bias="0.073" />
+
+        <EditText
+            android:id="@+id/etFinal"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginStart="50dp"
+            android:editable="false"
+            android:ems="10"
+            android:hint="Al"
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toEndOf="@id/etInicial"
+            app:layout_constraintTop_toTopOf="@id/etInicial" />
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/borde_redondo_gris"
+            android:enabled="false"
+            android:text="Consultar"
+            android:textAllCaps="false"
+            android:textColor="@color/blanco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
